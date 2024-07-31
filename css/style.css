@@ -127,3 +127,20 @@ a {
   background-color: #4c566a;
   scale: 1.2;
 }
+
+.circle {
+  height: 100px;
+  width: 100px;
+  margin: auto;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.initials {
+  font-size: 36px;
+  color: rgb(51, 45, 45);
+  font-weight: bold;
+}
