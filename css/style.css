@@ -144,3 +144,36 @@ a {
   color: rgb(51, 45, 45);
   font-weight: bold;
 }
+
+.cash {
+  background-color: #3b4252;
+  color: #d0d3d8;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 24px;
+  margin-top: 20px;
+}
+.cash:hover {
+  background-color: #4c566a;
+  scale: 1.2;
+}
+.cash:focus {
+  background-color: #4c566a;
+  scale: 1.2;
+}
+
+.submit {
+  background-color: #3b4252;
+  color: #d0d3d8;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.submit:hover {
+  background-color: #4c566a;
+  scale: 1.2;
+}

@@ -26,34 +26,30 @@
                     <span class="tooltip">Transactions</span>
                 </li>
             </a>
-            <li class="active">
-                <i class="fa fa-comment-dollar"></i>
-                <span class="tooltip">J-Pay</span>
-            </li>
-            <a href="cash.html">
+            <a href="jpay.html">
                 <li>
-                    <i class="fa fa-money"></i>
-                    <span class="tooltip">Cash Verifier</span>
+                    <i class="fa fa-comment-dollar"></i>
+                    <span class="tooltip">J-Pay</span>
                 </li>
             </a>
+            <li class="active">
+                <i class="fa fa-money"></i>
+                <span class="tooltip">Cash Verifier</span>
+            </li>
             <a href="profile.html">
-                <li>
+                <li class="down">
                     <i class="fa fa-user"></i>
                     <span class="tooltip">Profile</span>
                 </li>
             </a>
         </ul>
-    </nav><br><br>
-    <h1 class="transactionheader header">J-Pay</h1>
-    <div class="centercenter">
-        <h2 class="payment-header">Name of Recipient</h2>
-        <input class="who" type="text" placeholder="John Doe" /><br><br><br>
-        <input type="text" class="amount-input" id="amount-input" placeholder="$ 0.00" />
-        <p class="currency">JBX</p>
+    </nav>
+    <div style="text-align: center; padding-top: 45vh">
+        <h4>Enter Your 12 Letter Verification Hash</h4>
+        <input type="text" id="cash" class='cash' name="cash">
         <br><br>
-        <button class="pay-button" onclick="pay()">Pay</button>
+        <button onclick="cash()" class="submit">Submit</button>
     </div>
-
 </body>
 
 </html>
