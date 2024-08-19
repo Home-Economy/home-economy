@@ -1,5 +1,8 @@
 # Home Economy
 
+![image](https://github.com/user-attachments/assets/bdf75326-d39c-4337-a1c6-adc8f9f3cac3)
+
+
 ## Description
 Home Economy is a web application designed to manage home-based economic activities. It includes features like paying friends, cash verify, and user profile management.
 
