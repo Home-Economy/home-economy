@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <script src="js/script.js"></script>
     <script src="js/font.js"></script>
+    <script src="js/profile.js"></script>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/nav.css" />
     <meta http-equiv="Cache-control" content="public">
@@ -47,17 +48,27 @@
     <div class="main-content">
         <h1 class="transactionheader">Profile</h1><br><br>
         <center>
-            <div class="circle"><span class="initials">JC</span></div><br>
-            <h2>Name Name</h2>
+            <div class="circle"><span class="initials" id="initials">AA</span></div><br>
+            <h2 id="name">Name Name</h2>
             <br><br>
             <div class="details">
                 <h3>Card Info</h3><br>
-                <p>Card Number: 0000 0000 0000 0000</p>
-                <p>Expiry Date: 00/00</p>
-                <p>CVV: 000</p>
+                <p>Card Number: <span id='number'>0000 0000 0000 0000</span></p>
+                <p>CVV: <span id='cvv'>000</p></span>
                 <br>
 
             </div>
+            <br><br>
+            <button class="submit" onclick="logout()">Log Out</button>
+
+        </center>
+        <script>
+            function logout() {
+
+                localStorage.removeItem("authenticated");
+                window.location.href = "login.html";
+            }
+        </script>
 
         </center>
     </div>

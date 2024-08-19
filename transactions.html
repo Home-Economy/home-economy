@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/nav.css" />
     <meta http-equiv="Cache-control" content="public">
     <title>Home Economy</title>
+    <script src="js/transactions.js"></script>
 </head>
 
 <body>
@@ -18,7 +19,6 @@
                 <li>
                     <i class="fa fa-home"></i>
                     <span class="tooltip">Home</span>
-
                 </li>
             </a>
             <li class="active">
@@ -50,16 +50,23 @@
         <br><br><br><br><br>
     </div>
     <div class="expense-table">
-        <table>
+        <table id="table">
             <thead>
                 <tr>
                     <th>Statement</th>
                     <th>Date</th>
                     <th>Amount</th>
-                    <th>Balance</th>
                 </tr>
             </thead>
+            <tbody>
+            </tbody>
         </table>
+    </div>
+    <div id="pagination" class="pagination-controls">
+        <button id="prevButton" class="page-button"><i class="fa-solid fa-arrow-left"></i></button>
+        <input id="pageInput" type="number" class="page-button page" value="1" />
+        <button id="nextButton" class="page-button"><i class="fa-solid fa-arrow-right"></i></button>
+    </div>
 </body>
 
 </html>

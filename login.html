@@ -3,12 +3,13 @@
 
 <head>
     <meta charset="utf-8">
-    <script src="js/script.js"></script>
     <script src="js/font.js"></script>
+    <script src="js/login.js"></script>
     <link rel="stylesheet" href="css/login.css" />
     <link rel="stylesheet" href="css/nav.css" />
     <meta http-equiv="Cache-control" content="public">
     <title>Home Economy</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
@@ -17,11 +18,11 @@
         <h2>Welcome back!</h2>
         <br><br>
         <h4>Card Number</h4>
-        <input type="text" id="cc" class='input' name="cc">
+        <input type="text" id="cc" class='input' name="cc" autocomplete="off">
         <br><br>
         <h4>CCV</h4>
 
-        <input type="number" id="ccv" class='input' name="ccv">
+        <input type="number" id="ccv" class='input' name="ccv" autocomplete="off">
         <br><br>
         <button onclick="login()" class="login">Login</button>
         <br><br>

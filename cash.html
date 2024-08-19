@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/nav.css" />
     <meta http-equiv="Cache-control" content="public">
     <title>Home Economy</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
@@ -46,10 +47,25 @@
     </nav>
     <div style="text-align: center; padding-top: 45vh">
         <h4>Enter Your 12 Letter Verification Hash</h4>
-        <input type="text" id="cash" class='cash' name="cash">
+        <input type="number" id="cash" class='cash' name="cash" autocomplete="off">
         <br><br>
         <button onclick="cash()" class="submit">Submit</button>
     </div>
+
+    <script>
+        function cash() {
+            var hash = document.getElementById('cash').value;
+            if (!hash) {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Please enter a hash!',
+                })
+            } else {
+                window.location.href = "/cash/success.html#" + hash;
+            }
+        }
+    </script>
 </body>
 
 </html>
