@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", async function () {
   let response = await fetch(
-    `http://192.168.1.191:3000/card/info/balance?number=${localStorage.getItem(
+    `https://api.local.rednotsus.rocks/card/info/balance?number=${localStorage.getItem(
       "number"
     )}}`
   );

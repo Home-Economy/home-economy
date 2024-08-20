@@ -42,7 +42,7 @@ async function login() {
   ccNumber = cc.value.replace(/\s+/g, "");
   try {
     let response = await fetch(
-      "http://192.168.1.191:3000/card/admin/userLogin?number=" +
+      "https://api.local.rednotsus.rocks/card/admin/userLogin?number=" +
         ccNumber +
         "&cvv=" +
         ccv.value

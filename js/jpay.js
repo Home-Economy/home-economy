@@ -84,7 +84,7 @@ function pay() {
     .then(async (result) => {
       if (result.isConfirmed) {
         let response = await fetch(
-          `http://192.168.1.191:3000/card/transact/pay?from=${localStorage.getItem(
+          `https://api.local.rednotsus.rocks/card/transact/pay?from=${localStorage.getItem(
             "id"
           )}&to=${recipient.value}&amount=${toPay}`
         );

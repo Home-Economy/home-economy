@@ -20,7 +20,7 @@ async function signup() {
   }
   try {
     let response = await fetch(
-      "http://192.168.1.191:3000/card/info/new?name=" +
+      "https://api.local.rednotsus.rocks/card/info/new?name=" +
         fullName.value +
         "&code=" +
         code.value
