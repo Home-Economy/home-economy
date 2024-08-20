@@ -17,7 +17,7 @@ function calculateItemsPerPage() {
 
 async function fetchData(page) {
   let response = await fetch(
-    `http://localhost:3000/card/transact/listStatements?id=${localStorage.getItem(
+    `http://192.168.1.191:3000/card/transact/listStatements?id=${localStorage.getItem(
       "id"
     )}&page=${page}&pageSize=${itemsPerPage}`
   );
