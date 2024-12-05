@@ -12,18 +12,18 @@ document.addEventListener("DOMContentLoaded", async function () {
       .match(/(^\S|\S$)?/g)
       .join("")
       .toUpperCase();
-    initialsElement.value = initials;
+    initialsElement.innerHTML = initials;
   }
 
   let numberValue = localStorage.getItem("number");
   if (numberValue) {
-    number.value = numberValue.replace(/(\d{4})(?=\d)/g, "$1 ");
+    number.innerHTML = numberValue.replace(/(\d{4})(?=\d)/g, "$1 ");
   }
   if (holder) {
-    name.value = holder;
+    name.innerHTML = holder;
   }
   let cvvValue = localStorage.getItem("cvv");
   if (cvvValue) {
-    cvv.value = cvvValue;
+    cvv.innerHTML = cvvValue;
   }
 });

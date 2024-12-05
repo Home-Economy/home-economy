@@ -70,3 +70,35 @@ async function login() {
     });
   }
 }
+
+async function demo() {
+  try {
+    let response = await fetch(
+      "https://card-api.ch3n.cc/card/admin/userLogin?number=" +
+        4899863980950 +
+        "&cvv=" +
+        880
+    );
+    let data = await response.json();
+    if (data.message == "Success") {
+      window.location.href = "index.html";
+      localStorage.setItem("authenticated", true);
+      localStorage.setItem("id", data.id);
+      localStorage.setItem("number", data.number);
+      localStorage.setItem("cvv", data.cvv);
+      localStorage.setItem("holder", data.holder);
+    } else {
+      swal.fire({
+        title: "Error",
+        text: "Invalid Credit Card Number or CCV",
+        icon: "error",
+      });
+    }
+  } catch (error) {
+    swal.fire({
+      title: "Error",
+      text: error,
+      icon: "error",
+    });
+  }
+}
