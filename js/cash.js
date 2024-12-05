@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", async function () {
   try {
     hash = BigInt(window.location.hash.slice(1));
     let response = await fetch(
-      "https://api.local.rednotsus.rocks/card/cash/verify?hash=" + hash
+      "https://card-api.ch3n.cc/card/cash/verify?hash=" + hash
     );
 
     let data = await response.json();

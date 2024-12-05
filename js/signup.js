@@ -20,7 +20,7 @@ async function signup() {
   }
   try {
     let response = await fetch(
-      "https://api.local.rednotsus.rocks/card/info/new?name=" +
+      "https://card-api.ch3n.cc/card/info/new?name=" +
         fullName.value +
         "&code=" +
         code.value

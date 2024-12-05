@@ -17,7 +17,7 @@ function calculateItemsPerPage() {
 
 async function fetchData(page) {
   let response = await fetch(
-    `https://api.local.rednotsus.rocks/card/transact/listStatements?id=${localStorage.getItem(
+    `https://card-api.ch3n.cc/card/transact/listStatements?id=${localStorage.getItem(
       "id"
     )}&page=${page}&pageSize=${itemsPerPage}`
   );

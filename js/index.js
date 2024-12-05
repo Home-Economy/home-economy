@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", async function () {
   let response = await fetch(
-    `https://api.local.rednotsus.rocks/card/info/balance?number=${localStorage.getItem(
+    `https://card-api.ch3n.cc/card/info/balance?number=${localStorage.getItem(
       "number"
     )}}`
   );

@@ -84,7 +84,7 @@ function pay() {
     .then(async (result) => {
       if (result.isConfirmed) {
         let response = await fetch(
-          `https://api.local.rednotsus.rocks/card/transact/pay?from=${localStorage.getItem(
+          `https://card-api.ch3n.cc/card/transact/pay?from=${localStorage.getItem(
             "id"
           )}&to=${recipient.value}&amount=${toPay}`
         );
