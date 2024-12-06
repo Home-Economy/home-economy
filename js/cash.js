@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", async function () {
     let response = await fetch(
       "https://card-api.ch3n.cc/card/cash/verify?hash=" + hash
     );
-
     let data = await response.json();
     if (data.message === "Success") {
       document.getElementById("amount").innerHTML = data.amount;
